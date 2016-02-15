@@ -35,5 +35,5 @@ var binarySearch = function (array, target, high, low) {
 
 };
 
-var index = binarySearch([1, 2, 3, 4, 5], 7);
+var index = binarySearch([1, 2, 3, 4, 5], );
 console.log(index); // 3
