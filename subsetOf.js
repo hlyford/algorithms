@@ -20,5 +20,7 @@ var checkSubset = function(a, b) {
 // TEST
 var a = [2, 5, 7, 9, 10, 10];
 var b = [2, 5, 10, 10, 10];
+var c = [5];
 
-console.log(checkSubset(a, b));
+// console.log(checkSubset(a, b));
+// console.log(checkSubset(b, c));
