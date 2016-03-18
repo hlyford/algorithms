@@ -35,19 +35,17 @@ var prodMaker2 = function(arr) {
 	var leftSoFar = 0, rightSoFar = 0;
 
 	for (var i = 0, j = arr.length - 1; i < arr.length; i++, j--) {
-		leftProds[i] = leftSoFar;
-		rightProds[j] = rightSoFar;
 		if (i === 0) {
 			leftSoFar = 1, rightSoFar = 1;
 		}
+		leftProds[i] = leftSoFar; 
+		rightProds[j] = rightSoFar;
 		rightSoFar *= arr[j];
-		leftSoFar *= arr[i];
-		
-	}	
-	console.log(leftProds, rightProds); // 
+		leftSoFar *= arr[i];		
+	}		
 	var totalProds = [];
 	for (var p = 0; p < leftProds.length; p++) {		
-		totalProds[p] = leftProds[p] + rightProds[p];
+		totalProds[p] = leftProds[p] * rightProds[p];
 	}
 	return totalProds;
 }
