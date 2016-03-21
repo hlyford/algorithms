@@ -131,4 +131,4 @@ var leaf6 = branch3.addChild(9);
 var leaf7 = branch3.addChild(11);
 
 
-console.log(root1.inOrderTraversal()); //
+console.log(root1.inOrderTraversal()); // [2, 5, 6, 8, 9, 10, 11]
