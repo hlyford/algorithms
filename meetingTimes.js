@@ -53,8 +53,7 @@ var condenseMeetingTimes = function(arr) {
   var current = {startTime: arrSorted[0].startTime, endTime: arrSorted[0].endTime};
   for (var i = 1; i < arrSorted.length; i++) {
     // if they DONT overlap
-    if (!(current.endTime >= arrSorted[i].startTime)) {
-      // console.log(arrSorted[i].endTime);
+    if (!(current.endTime >= arrSorted[i].startTime)) {      
       results.push(current);
       current = {startTime: arrSorted[i].startTime, endTime: arrSorted[i].endTime};
     } else {
